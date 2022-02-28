@@ -26,13 +26,15 @@ TEST_CASE( "Numeros romanos - Subtração de digitos", "[romanos]" ) {
     REQUIRE( romanos_para_decimal("CDXLIV") == 444);
     REQUIRE( romanos_para_decimal("DCIX") == 609);
     REQUIRE( romanos_para_decimal("CCCXCIX") == 399);
+    REQUIRE( romanos_para_decimal("DXCVIII") == 598);
+    REQUIRE( romanos_para_decimal("DCXXXVIII") == 638);
 }
 
 
-// TEST_CASE( "Numeros romanos - Testando invalidos", "[romanos]" ) {
-//     // REQUIRE( romanos_para_decimal("-23") == -1 );
-//     REQUIRE( romanos_para_decimal("-IVV") == -1 );
-//     REQUIRE( romanos_para_decimal("IIIIV") == -1);
-//     REQUIRE( romanos_para_decimal("----") == -1);
-//     REQUIRE( romanos_para_decimal("ivxx") == -1);
-// }
+TEST_CASE( "Numeros romanos - Testando invalidos", "[romanos]" ) {
+    REQUIRE( romanos_para_decimal("-23") == -1 );
+    REQUIRE( romanos_para_decimal("-IVV") == -1 );
+    REQUIRE( romanos_para_decimal("IIIIV") == -1);
+    REQUIRE( romanos_para_decimal("----") == -1);
+    REQUIRE( romanos_para_decimal("ivxx") == -1);
+}

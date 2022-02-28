@@ -19,7 +19,7 @@ int converte_digito(char d){
     if (d == 'M')
         return 1000;
     else{
-      return -1;
+      return false;
     }
 }
 
@@ -41,8 +41,13 @@ bool valida_romano(string num_romano){
   char char_repetido;
   int contador_repetido = 0;
   for( int i = 0; i < size ; i++){
-    if( converte_digito(num_romano[i] == -1)) {
+    //cout << num_romano[i] << endl;
+    cout << converte_digito(num_romano[i]) << endl;
+    if( !converte_digito(num_romano[i] )) {
+     // cout << "numero invalido" << endl;
       return false;
+    }else{
+      cout << "diferente de falso" << endl;
     }
     if(num_romano[i] == char_repetido){
       contador_repetido += 1;
@@ -52,13 +57,14 @@ bool valida_romano(string num_romano){
     }
     char_repetido = num_romano[i];
     if(contador_repetido >= 3){
+      //cout << "repetiu demais" << endl;
       return false;
     }
     if ( i + 1 < size) {
       if ( converte_digito(num_romano[i]) < converte_digito(num_romano[i + 1]) ){
         string pair;
-        pair += num_romano[0];
-        pair += num_romano[1];
+        pair += num_romano[i];
+        pair += num_romano[i + 1];
         if( verify_pair(pair) == false){
           return false;}
       }

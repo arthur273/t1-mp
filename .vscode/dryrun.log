@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/arthur/Documents/mp/romanos-exemplo'
+g++ -std=c++11 -Wall  -c romanos.cpp
+g++ -std=c++11 -Wall  romanos.o testa_romanos.cpp -o testa_romanos
+make: Leaving directory '/home/arthur/Documents/mp/romanos-exemplo'
+ 

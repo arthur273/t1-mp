@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Feb 27 12:31:12 2022
+# Make data base, printed on Mon Feb 28 22:17:42 2022
 
 # Variables
 
@@ -43,7 +43,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/arthur/Documents/mp/romanos-exemplo
+CURDIR := /home/arthur/Documents/mp/200053523_arthur
 # makefile
 SHELL = /bin/sh
 # environment
@@ -83,7 +83,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 LC_NAME = pt_BR.UTF-8
 # environment
-VSCODE_CWD = /home/arthur/Documents/mp/romanos-exemplo
+VSCODE_CWD = /home/arthur/Documents/mp/200053523_arthur
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # default
@@ -131,7 +131,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 rvm_bin_path = /home/arthur/.rvm/bin
 # environment
-PWD = /home/arthur/Documents/mp/romanos-exemplo
+PWD = /home/arthur/Documents/mp/200053523_arthur
 # default
 .LOADED := 
 # environment
@@ -187,7 +187,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-48483c87-8939-4838-a635-ac14c8427c11.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9408d323-874c-4283-bce1-fde776764ef2.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -207,7 +207,7 @@ LC_TELEPHONE = pt_BR.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/arthur
+OLDPWD = /home/arthur/Documents/mp
 # default
 .VARIABLES := 
 # automatic
@@ -284,13 +284,13 @@ MY_RUBY_HOME = /home/arthur/.rvm/rubies/ruby-2.7.2
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
-
-# Directories
  
 
-# . (device 2051, inode 9573928): 14 files, no impossibilities.
+# Directories
 
-# 14 files, no impossibilities in 1 directories.
+# . (device 2051, inode 9573928): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -301,39 +301,37 @@ MY_RUBY_HOME = /home/arthur/.rvm/rubies/ruby-2.7.2
 all: romanos.o testa_romanos.cpp
 #  Command line target.
 #  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := romanos.o testa_romanos.cpp
+# automatic
+# | := 
+# automatic
+# < := romanos.o
+# automatic
+# ^ := romanos.o testa_romanos.cpp
+# automatic
+# ? := romanos.o testa_romanos.cpp
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 2):
 	g++ -std=c++11 -Wall  romanos.o testa_romanos.cpp -o testa_romanos
 	
 
 romanos.o: romanos.cpp romanos.hpp
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  Last modified 2022-02-27 01:21:06.841124197
+#  Last modified 2022-02-28 22:01:53.91565285
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := romanos.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := romanos.cpp romanos.hpp
-# automatic
-# | := 
-# automatic
-# < := romanos.cpp
-# automatic
-# ^ := romanos.cpp romanos.hpp
-# automatic
-# ? := romanos.cpp
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 6):
 	g++ -std=c++11 -Wall  -c romanos.cpp
 	
@@ -357,9 +355,10 @@ Makefile:
 
 # Not a target:
 testa_romanos.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-02-28 22:03:04.972567826
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -379,14 +378,14 @@ clean:
 # Not a target:
 romanos.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-27 12:30:32.22591882
+#  Last modified 2022-02-28 22:00:22.818312427
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 romanos.hpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-03-15 00:53:20
+#  Last modified 2022-02-27 14:13:09.573363161
 #  File has been updated.
 #  Successfully updated.
 
@@ -398,12 +397,12 @@ romanos.hpp:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 193 B / avg = 9 B
-# current buf: size = 8162 B / used = 193 B / count = 20 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 181 B / avg = 9 B
+# current buf: size = 8162 B / used = 181 B / count = 19 / avg = 9 B
 
-# strcache performance: lookups = 34 / hit rate = 41%
+# strcache performance: lookups = 33 / hit rate = 42%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=1/34=3%
-# Finished Make data base on Sun Feb 27 12:31:12 2022
+# Load=19/8192=0%, Rehash=0, Collisions=1/33=3%
+# Finished Make data base on Mon Feb 28 22:17:42 2022
 
  

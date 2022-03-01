@@ -24,9 +24,7 @@ int converte_digito(char d){
 }
 
 bool verify_pair(string pair){
-   const char *valid_subtractions[6] = { "IV", "IX",
-                             "XL", "XC",
-                             "CD", "CM"};
+   const char *valid_subtractions[6] = {"IV", "IX","XL", "XC", "CD", "CM"};
     bool valid = false;
     for ( int j = 0; j < 6 ; j++ ){
       if (pair == valid_subtractions[j]){
@@ -40,14 +38,11 @@ bool valida_romano(string num_romano){
   int size = num_romano.length();
   char char_repetido;
   int contador_repetido = 0;
+  const char *invalid_equals[3] = {"VV", "LL","DD"};
   for( int i = 0; i < size ; i++){
-    //cout << num_romano[i] << endl;
-    cout << converte_digito(num_romano[i]) << endl;
     if( !converte_digito(num_romano[i] )) {
-     // cout << "numero invalido" << endl;
       return false;
     }else{
-      cout << "diferente de falso" << endl;
     }
     if(num_romano[i] == char_repetido){
       contador_repetido += 1;
@@ -57,7 +52,6 @@ bool valida_romano(string num_romano){
     }
     char_repetido = num_romano[i];
     if(contador_repetido >= 3){
-      //cout << "repetiu demais" << endl;
       return false;
     }
     if ( i + 1 < size) {
@@ -66,9 +60,25 @@ bool valida_romano(string num_romano){
         pair += num_romano[i];
         pair += num_romano[i + 1];
         if( verify_pair(pair) == false){
-          return false;}
+          return false;
+        }
       }
     }
+    if ( converte_digito(num_romano[i]) == converte_digito(num_romano[i + 1])){
+      string equal_pair;
+      equal_pair += num_romano[i];
+      equal_pair += num_romano[i + 1];
+      for( int j = 0 ; j < 3 ; j++){
+        if (equal_pair == invalid_equals[j] ){
+          return false;
+        }
+      }
+    }
+  if ( i + 2 < size ) {
+    if ( converte_digito(num_romano[i]) < converte_digito(num_romano[i + 2]) ){
+      return false;
+    }
+  }
   }
   return true;
 }

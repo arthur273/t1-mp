@@ -1,2 +1,3 @@
 com o g++ e o make instalado 
 digite "make" neste diretório
+execute o arquivo testa_romanos.exe
